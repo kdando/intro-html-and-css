@@ -12,13 +12,11 @@ ul, ol {
     list-style-position: inside;
     color: palegreen;
     text-align: right;
-
   }
 
 h1,h2 {
     font-family: "Monaco", monospace;
     color: palegreen;
-
 }
 
 img {
@@ -28,5 +26,18 @@ img {
     border-width: 4px;
     border-color: blueviolet;
     margin: 100px;
-    
+}
+
+/* grid layout definitions */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0px;
+}
+
+.item {
+    max-width: 300px;
+    max-height: auto;
 }
